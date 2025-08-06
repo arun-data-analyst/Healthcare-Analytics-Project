@@ -1,10 +1,5 @@
 ![Project Banner](images/chronic_conditions_banner.png)
 
-# 📘 The Burden of Chronic Conditions in Canada  
-**Evidence from the Canadian Community Health Survey (CCHS 2019–2020)**
-
----
-
 ## 🧠 Overview
 
 This project investigates the **prevalence and practical significance of chronic health conditions** across Canada using public microdata from the **Canadian Community Health Survey (CCHS)**.  
