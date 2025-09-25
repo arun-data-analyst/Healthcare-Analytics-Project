@@ -66,7 +66,16 @@ Healthcare-Analytics-Project/
 ├── notebooks/
 │ ├── 01_CCHS_ChronicConditions_Stratification.ipynb
 │ ├── 02_CCHS_National_Inferential_Stats.ipynb
-│ └── 03_CCHS_Practical_Significance.ipynb
+│ ├── 03_CCHS_Practical_Significance.ipynb
+│ ├── 04_Ontario_Statistical_Significance
+│ └── 05_Ontario_Quantifying_Disparities
+│
+├── plots/
+│ └── National_Level/
+│ ├── ChronicConditions_AveragePrevalence.png
+│ ├── ChronicConditions_ByProvince.png
+│ ├── Mental_vs_Physical_ByAgeGroup.png
+│ └── Mental_vs_Physical_ByGender.png
 │
 ├── reports/
 │ ├── Canada_ChronicConditions_Report_WithNotes_2019-2020.pdf
@@ -74,7 +83,10 @@ Healthcare-Analytics-Project/
 │ ├── Ontario_ChronicConditions_Report_2019-2020.pdf
 │ └── Ontario_ChronicConditions_LiteratureReview_2025.pdf
 │
-└── README.md
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 ---
 
