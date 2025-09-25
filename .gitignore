@@ -1,4 +1,18 @@
-__pycache__/
-*.pyc
-.DS_Store
+# Datasets
+*.csv
 *.xlsx
+*.parquet
+
+# Python virtual environment
+venv/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# IDE and editor folders
+.vscode/
+.idea/

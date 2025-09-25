@@ -1,38 +1,64 @@
-![Project Banner](images/chronic_conditions_banner.png)
+# 📊 Healthcare Analytics: Chronic Disease Prevalence in Canada and Ontario
 
-# 🧠 Healthcare Analytics Project
+## Project Overview
+This project provides a comprehensive exploratory data analysis (EDA) of chronic disease in Canada using the **Canadian Community Health Survey (CCHS) 2019-2020 dataset**.
 
-## Overview
-This project investigates the **prevalence and practical significance of chronic health conditions** in Canada and Ontario using microdata from the **Canadian Community Health Survey (CCHS 2019–2020)**.  
-The analysis is stratified by **age, sex, income, and province** to explore how health disparities manifest across demographics and geography.  
-A special focus is placed on **health equity**, highlighting how social determinants shape chronic disease prevalence.
+The analysis is presented in two parts:
 
----
+- **National-level report**: Examines the overall burden of ten chronic conditions, explores variations across key demographics (age, gender, income, province), and contrasts the patterns of mental versus physical health issues.  
+- **Provincial deep-dive**: Uses Ontario as a case study to compare its disease prevalence against the national average and, more importantly, to identify the key drivers of health inequity within the province.
 
-## 📑 Featured Reports
-
-### 🇨🇦 Canada-Wide Analysis
-- **[Canada_ChronicConditions_Report_WithNotes_2019-2020.pdf](reports/Canada_ChronicConditions_Report_WithNotes_2019-2020.pdf)**  
-  Comprehensive national-level study of 10 chronic conditions.  
-  Includes a clarifications page at the end highlighting data limitations and methodological notes.  
-
-- **[Canada_ChronicConditions_LiteratureReview_2025.pdf](reports/Canada_ChronicConditions_LiteratureReview_2025.pdf)**  
-  Literature review situating national findings within Canadian and international evidence on chronic disease and health equity.  
+The goal is to translate complex health data into clear, actionable insights for healthcare planners, community organizations, and decision-makers.
 
 ---
 
-### 🏥 Ontario-Focused Analysis
-- **[Ontario_ChronicConditions_Report_2019-2020.pdf](reports/Ontario_ChronicConditions_Report_2019-2020.pdf)**  
-  Ontario-specific prevalence and inequities study.  
-  Key finding: Ontario mirrors Canada overall, but disparities by **age** and **income** are stark.  
+## ❓ Key Research Questions
+This analysis was guided by the following core questions:
 
-- **[Ontario_ChronicConditions_LiteratureReview_2025.pdf](reports/Ontario_ChronicConditions_LiteratureReview_2025.pdf)**  
-  Companion literature review highlighting Ontario-specific research, persistent inequities, and relevant public health frameworks.  
+1. What is the overall **national burden** of the most common chronic conditions in Canada?  
+2. How do prevalence patterns differ for **mental vs. physical health conditions** across different age groups and genders?  
+3. How does chronic disease prevalence vary by **province**, and which regions are most affected?  
+4. Is Ontario's chronic condition burden significantly different from the **national average**?  
+5. Within Ontario, what are the most significant drivers of health disparities, specifically looking at **age and income**?  
 
 ---
 
+## 💡 Key Findings
 
-## 📂 Project Structure
+### National-Level Insights
+- **Age is the dominant factor in chronic disease.** The burden is overwhelmingly concentrated in older populations, with **83.7% of seniors (65+)** reporting at least one chronic condition, compared to just **19% of adolescents**.  
+- **Mental health conditions peak in young adulthood.** Unlike physical ailments, the prevalence of mental health disorders is highest among young adults (**17.4% for ages 18-34**) and declines in older age groups.  
+- **Women report significantly higher rates of mental illness.** Women are about **1.6 times more likely** to report a mood or anxiety disorder than men (**17.3% vs. 10.7%**).  
+- **Significant regional variation exists.** The Atlantic provinces, particularly **Newfoundland & Labrador (57.6%)** and **Nova Scotia (56.7%)**, show the highest prevalence of chronic conditions in the country.  
+
+### Ontario-Specific Insights
+- **Ontario is not an outlier.** For all ten conditions studied, Ontario's overall prevalence closely mirrors the national average, with differences being less than one percentage point.  
+- **Internal disparities are the real story.**  
+  - **Age Gradient:** The prevalence of high blood pressure skyrockets from **0.1% among adolescents** to **52.4% among seniors**.  
+  - **Income Gradient:** For musculoskeletal conditions, prevalence in the lowest-income groups (**~32%**) is nearly **double** that of the highest-income group (**17%**).  
+
+**Conclusion:** While inter-provincial comparisons are interesting, the most critical health equity challenges lie in addressing the vast disparities driven by **age and income** within a province's own borders.  
+
+---
+
+## ⚙️ Data and Methodology
+
+- **Data Source:** Canadian Community Health Survey (CCHS) 2019-2020.  
+- **Population:** Canadians aged 12 and over.  
+- **Analytical Approach:** The analysis uses survey weights to produce representative estimates. 95% confidence intervals are calculated using 1,000 bootstrap replicates. The primary measures of association are **Cramér's V**, **absolute differences**, and **relative risks**, with a de-emphasis on p-values to focus on practical significance.  
+
+---
+
+## 🛠️ Tools and Libraries
+
+- **Python**: The core programming language used for the analysis.  
+- **Pandas & NumPy**: For data manipulation and cleaning.  
+- **Matplotlib & Seaborn**: For data visualization.  
+- **Jupyter Notebook**: As the interactive development environment.  
+
+---
+
+## 🗂️ Repository Structure
 
 ```
 Healthcare-Analytics-Project/
@@ -50,40 +76,25 @@ Healthcare-Analytics-Project/
 │
 └── README.md
 ```
+---
 
+## 🚀 How to Run
 
-### 📓 Notebooks
-- **Stratification**: Calculates prevalence across conditions and demographic groups.  
-- **Practical Significance**: Identifies absolute differences, relative risks, and Cramér’s V associations.  
-- **Inferential Stats**: Bootstrapped estimates for confidence intervals and national-level comparisons.  
+1. Clone this repository to your local machine.  
+2. Install the necessary packages from the requirements.txt file:  
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Launch Jupyter Notebook and open the analysis file:  
+
+```bash
+jupyter notebook
+```
 
 ---
 
-## 📊 Sample Output
+## 👤 Author
 
-Example: **Diabetes prevalence by age group** (with 95% confidence intervals).
-
-![Diabetes Prevalence by Age Group](images/stratified_diabetes_age.png)
-
----
-
-## 🔐 Data Availability
-**The data is not publicly shared in this repository** due to confidentiality restrictions under the Public Use Microdata File (PUMF) licensing agreement.  
-
-To obtain access to the CCHS dataset, please visit:  
-🔗 [Statistics Canada – Canadian Community Health Survey (CCHS)](https://www150.statcan.gc.ca/n1/en/catalogue/82M0013X)
-
----
-
-## 📜 License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
-You are free to reuse, adapt, and build upon this work with proper attribution.
-
----
-
-## ✍️ Author
-**Arun Acharya**  
-Data Analyst | Healthcare Researcher  
-📍 Ottawa, Canada  
-🔗 [GitHub Profile](https://github.com/arun-data-analyst)
-
+**Arun Acharya**
