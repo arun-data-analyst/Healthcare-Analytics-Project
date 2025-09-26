@@ -2,29 +2,29 @@
 
 This repository contains a detailed, statistics‑driven exploration of chronic disease prevalence in Canada, based on the **Canadian Community Health Survey (CCHS) 2019–20** micro‑data. The analysis is split into a national overview and an Ontario deep‑dive, with the goal of turning complex data into actionable insights for public‑health decision‑makers.
 
-## 🗾° What You’ll Find
+## 🌏 What You’ll Find
 
 - **National report:** Quantifies the burden of ten chronic conditions, comparing mental vs. physical health and exploring variations across age, gender, income and province.
 - **Ontario report:** Benchmarks Ontario against the national average and highlights internal disparities driven by age and income.
-- **Statistical methodology:** Uses survey weights, 1 000 bootstrap replicates and measures of association like Cramér’s V, absolute differences and relative risks【38415751756450†L72-L79】.
+- **Statistical methodology:** Uses survey weights, 1 000 bootstrap replicates and measures of association like Cramér’s V, absolute differences and relative risks.
 - **Professional‑grade reports:** Includes polished PDF reports and literature reviews for both Canada and Ontario in the `reports/` folder.
 
 ## ✨ Quick Highlights
 
-- **Age gradient:** 83.7 % of seniors have at least one chronic condition versus 19 % of adolescents【38415751756450†L39-L43】.
-- **Mental vs. physical health:** Mental health disorders peak in young adulthood (17.4 % among 18–34‑year‑olds) while physical ailments climb steadily with age【38415751756450†L39-L46】.
-- **Gender gap:** Women are 1.6 × more likely than men to report mood or anxiety disorders【38415751756450†L47-L49】.
-- **Regional variation:** Atlantic provinces (e.g., Newfoundland & Labrador at 57.6 %) show the highest burden, whereas Ontario’s overall prevalence closely mirrors the national average【38415751756450†L50-L57】.
-- **Internal disparities in Ontario:** High blood pressure skyrockets from 0.1 % among adolescents to 52.4 % among seniors, and musculoskeletal conditions are nearly twice as prevalent in the lowest‑income group as in the highest【38415751756450†L55-L63】.
+- **Age gradient:** 83.7 % of seniors have at least one chronic condition versus 19 % of adolescents.
+- **Mental vs. physical health:** Mental health disorders peak in young adulthood (17.4 % among 18‑34‑year‑olds) while physical ailments climb steadily with age.
+- **Gender gap:** Women are 1.6 × more likely than men to report mood or anxiety disorders.
+- **Regional variation:** Atlantic provinces (e.g., Newfoundland & Labrador at 57.6 %) show the highest burden, whereas Ontario’s overall prevalence closely mirrors the national average.
+- **Internal disparities in Ontario:** High blood pressure skyrockets from 0.1 % among adolescents to 52.4 % among seniors, and musculoskeletal conditions are nearly twice as prevalent in the lowest‑income group as in the highest.
 
-## 🥬 Methodology
+## 🧐 Methodology
 
 1. **Data selection & cleaning:** Selected relevant variables (age, sex, income, province, chronic condition indicators) from the CCHS micro‑data.
 2. **Weighting & estimation:** Applied survey and replicate weights to calculate prevalence estimates and 95 % confidence intervals.
-3. **Association metrics:** Used Cramér’s V, absolute differences and relative risks to assess the magnitude of disparities【38415751756450†L72-L79】.
+3. **Association metrics:** Used Cramér’s V, absolute differences and relative risks to assess the magnitude of disparities.
 4. **Visualization & reporting:** Produced interactive notebooks and polished PDF reports summarising national and provincial findings.
 
-## 🖼 Sample Visuals
+## 🗼 Sample Visuals
 
 ![National: Mental vs Physical by Age](plots/National_Level/Mental_vs_Physical_ByAgeGroup.png)
 
@@ -34,7 +34,7 @@ This repository contains a detailed, statistics‑driven exploration of chronic 
 
 *Overall prevalence of chronic conditions across provinces.*
 
-## 📦 Repository Structure
+## 🗂 Repository Structure
 
 ```
 Healthcare-Analytics-Project/
